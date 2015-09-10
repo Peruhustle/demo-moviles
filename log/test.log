@@ -1,0 +1,757 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("nombre", "contenido", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2014-05-08 19:07:53', '2014-05-08 19:07:53', 980190962)
+SQLite3::SQLException: table statuses has no column named nombre: INSERT INTO "statuses" ("nombre", "contenido", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2014-05-08 19:07:53', '2014-05-08 19:07:53', 980190962)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:09:54', '2014-05-08 19:09:54', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:09:54', '2014-05-08 19:09:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (233.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:12:17', '2014-05-08 19:12:17', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:12:17', '2014-05-08 19:12:17', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (231.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:43:15', '2014-05-08 19:43:15', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:43:15', '2014-05-08 19:43:15', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (179.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:46:48', '2014-05-08 19:46:48', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 19:46:48', '2014-05-08 19:46:48', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (209.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_nombre_perfil
+----------------------------------------------------------------
+  [1m[36m (27.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_apellido
+-----------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:02:26', '2014-05-08 20:02:26', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:02:26', '2014-05-08 20:02:26', 298486374)[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "users"
+  [1m[36m (166.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_nombre_perfil
+----------------------------------------------------------------
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_apellido
+-----------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_tener_un_nombre_de_perfil_unico
+-----------------------------------------------------------------
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:07:28', '2014-05-08 20:07:28', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:07:28', '2014-05-08 20:07:28', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (493.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_nombre_perfil
+----------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_apellido
+-----------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_tener_un_nombre_de_perfil_unico
+-----------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'yo@oja.la' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (18.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "nombre_perfil", "primer_apellido", "primer_nombre", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 08 May 2014 20:07:28 UTC +00:00], ["email", "yo@oja.la"], ["encrypted_password", "$2a$04$pdd9HNXTMRNtIgjyA7hIKu6v62FEEqMtwotpOxyT7N9KsFNH2qAgm"], ["nombre_perfil", "Oja.la"], ["primer_apellido", "la"], ["primer_nombre", "Oja"], ["updated_at", Thu, 08 May 2014 20:07:28 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:34:20', '2014-05-08 20:34:20', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:34:20', '2014-05-08 20:34:20', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (210.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_nombre_perfil
+----------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_apellido
+-----------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:44:08', '2014-05-08 20:44:08', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-08 20:44:08', '2014-05-08 20:44:08', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (251.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_de_perfil_con_formato
+------------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" = 'Mi nombre con espacios' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_nombre_nombre_perfil
+----------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_apellido
+-----------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------
+UserTest: test_un_usuario_deberia_entrar_su_primer_nombre
+---------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."nombre_perfil" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:43:28', '2014-05-12 19:43:28', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:43:28', '2014-05-12 19:43:28', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (233.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/login_abre_la_pagina_de_inicio_de_sesión
+--------------------------------------------------------------------------
+Started GET "/comenzar" for 127.0.0.1 at 2014-05-12 15:13:28 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (597.2ms)
+Completed 200 OK in 4790ms (Views: 4679.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/logout_abre_la_pagina_de_cerrar_de_sesión
+---------------------------------------------------------------------------
+Started GET "/destruir" for 127.0.0.1 at 2014-05-12 15:13:33 -0430
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/registro_abre_la_pagina_de_registrar_usuario
+------------------------------------------------------------------------------
+Started GET "/registrar" for 127.0.0.1 at 2014-05-12 15:13:33 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:43:47', '2014-05-12 19:43:47', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:43:47', '2014-05-12 19:43:47', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (230.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/login_abre_la_pagina_de_inicio_de_sesión
+--------------------------------------------------------------------------
+Started GET "/comenzar" for 127.0.0.1 at 2014-05-12 15:13:48 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 261ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/logout_abre_la_pagina_de_cerrar_de_sesión
+---------------------------------------------------------------------------
+Started GET "/destruir" for 127.0.0.1 at 2014-05-12 15:13:48 -0430
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/registro_abre_la_pagina_de_registrar_usuario
+------------------------------------------------------------------------------
+Started GET "/registrar" for 127.0.0.1 at 2014-05-12 15:13:48 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:44:07', '2014-05-12 19:44:07', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:44:07', '2014-05-12 19:44:07', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (201.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+--------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/login_abre_la_pagina_de_inicio_de_sesión
+--------------------------------------------------------------------------
+Started GET "/comenzar" for 127.0.0.1 at 2014-05-12 15:14:07 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 262ms (Views: 174.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/logout_abre_la_pagina_de_cerrar_de_sesión
+---------------------------------------------------------------------------
+Started GET "/destruir" for 127.0.0.1 at 2014-05-12 15:14:08 -0430
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/registro_abre_la_pagina_de_registrar_usuario
+------------------------------------------------------------------------------
+Started GET "/registrar" for 127.0.0.1 at 2014-05-12 15:14:08 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:46:54', '2014-05-12 19:46:54', 980190962)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 19:46:54', '2014-05-12 19:46:54', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (167.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/login_abre_la_pagina_de_inicio_de_sesión
+--------------------------------------------------------------------------
+Started GET "/comenzar" for 127.0.0.1 at 2014-05-12 15:16:54 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (124.0ms)
+Completed 200 OK in 266ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/logout_abre_la_pagina_de_cerrar_de_sesión
+---------------------------------------------------------------------------
+Started GET "/destruir" for 127.0.0.1 at 2014-05-12 15:16:54 -0430
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://www.example.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------------------------------------
+RutasPersonalizadasTest: test_el_/registro_abre_la_pagina_de_registrar_usuario
+------------------------------------------------------------------------------
+Started GET "/registrar" for 127.0.0.1 at 2014-05-12 15:16:54 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 20:09:42', '2014-05-12 20:09:42', 980190962, 859034772)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 20:09:42', '2014-05-12 20:09:42', 298486374, 859034772)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (167.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_create_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (7.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at") VALUES (?, ?, ?)  [["contenido", "MyText"], ["created_at", Mon, 12 May 2014 20:09:43 UTC +00:00], ["updated_at", Mon, 12 May 2014 20:09:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 26ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+StatusesControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (112.0ms)
+Completed 500 Internal Server Error in 168ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 859034772]]
+Completed 500 Internal Server Error in 49ms
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+StatusesControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered statuses/_form.html.erb (5.0ms)
+Completed 500 Internal Server Error in 12ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 859034772]]
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 20:17:24', '2014-05-12 20:17:24', 980190962, 859034772)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 20:17:24', '2014-05-12 20:17:24', 298486374, 859034772)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (159.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_create_status
+-------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at") VALUES (?, ?, ?)  [["contenido", "MyText"], ["created_at", Mon, 12 May 2014 20:17:24 UTC +00:00], ["updated_at", Mon, 12 May 2014 20:17:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 15ms (ActiveRecord: 3.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+StatusesControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (104.0ms)
+Completed 200 OK in 150ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 859034772]]
+Completed 500 Internal Server Error in 45ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+StatusesControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered statuses/_form.html.erb (4.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 859034772]]
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 22:44:20', '2014-05-12 22:44:20', 980190962, 859034772)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2014-05-12 22:44:20', '2014-05-12 22:44:20', 298486374, 859034772)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (208.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------
+StatusesControllerTest: test_debe_iniciar_sesion_para_hacer_un_post
+-------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"contenido"=>"Hola Mundo"}}
+Completed 401 Unauthorized in 13ms
+  Rendered text template (0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------
+StatusesControllerTest: test_debe_ser_redirigido_cuando_no_ha_iniciado_sesion
+-----------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_deberia_mostrar_la_nueva_pagina_cuando_inicio_sesion
+---------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_create_status
+-------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+StatusesControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (101.0ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 859034772]]
+Completed 500 Internal Server Error in 18ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 859034772]]
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 22:45:26', '2014-05-12 22:45:26', 980190962)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "statuses" ("contenido", "created_at", "updated_at", "id") VALUES ('MyText', '2014-05-12 22:45:26', '2014-05-12 22:45:26', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "users"
+  [1m[36m (187.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------
+StatusesControllerTest: test_debe_iniciar_sesion_para_hacer_un_post
+-------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"contenido"=>"Hola Mundo"}}
+Completed 401 Unauthorized in 13ms
+  Rendered text template (0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------
+StatusesControllerTest: test_debe_ser_redirigido_cuando_no_ha_iniciado_sesion
+-----------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 0ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_deberia_mostrar_la_nueva_pagina_cuando_inicio_sesion
+---------------------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_create_status
+-------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}}
+Completed 401 Unauthorized in 1ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+StatusesControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (72.0ms)
+Completed 200 OK in 153ms (Views: 151.0ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+Completed 500 Internal Server Error in 9ms
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"contenido"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered statuses/_form.html.erb (6.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
